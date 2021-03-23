@@ -20,6 +20,7 @@ public class Vetor {
 		{
 			System.out.println("x["+i+"]= " + x[i]); //mostra o valores do vetor
 		}
+		System.out.print("Olá");
 
 	}
 
