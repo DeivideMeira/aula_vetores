@@ -1,10 +1,10 @@
-package Exercícios_Vetores;
+package ExercÃ­cios_Vetores;
 
 import java.util.Scanner;
 
 public class EX05 {
 	
-	//Menor e Posição
+	//Menor e PosiÃ§Ã£o
 	//https://www.urionlinejudge.com.br/judge/pt/problems/view/1180
 
 	public static void main(String[] args) {
@@ -15,7 +15,12 @@ public class EX05 {
 		int posicao = 0;
 		int menor = 0;
 
-		N = entrada.nextInt(); 
+		while(!(N>1 && N<1000))
+		{
+			System.out.println("Digite um valor entre 1 e 1000!");
+			N = entrada.nextInt(); 
+		}
+		
 		int [] X = new int [N]; 
 
 		for (int i = 0; i <X.length; i++)
