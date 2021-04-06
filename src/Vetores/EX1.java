@@ -1,27 +1,33 @@
 package Vetores;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class EX1 {
 
 	public static void main(String[] args) {
+		
 		// TODO Auto-generated method stub
-		//Digitar o maior e menor antes de ordem e sua posiÁ„o
+		//Digitar o maior e menor antes de ordem e sua posi√ß√£o
 		//Ordenar em ordem crescente dentro do vetor
 		
 		
 		Scanner entrada = new Scanner (System.in);
 
 		int maior=0;
-		int menor=2^60;
+		int menor= 0;
 		int i;
-		int posicao=0;
+		int posicaomenor=0;
+		int posicaomaior=0;
 		
-		int x[] = new int[3];
+		int x[] = new int[5];
 		
 		for (i=0; i < x.length; i++)
 		{
 			x[i] = entrada.nextInt(); //alimenta o vetor
+			menor = x[i];
+			maior = x[i];
+
 		}
 		
 		for(i=0; i<x.length; i++)
@@ -29,15 +35,25 @@ public class EX1 {
 			if (x[i] < menor)
 			{
 				menor = x[i];
-				posicao = i;
+				posicaomenor = i;
 			}
+		}
+		for(i=0; i<x.length; i++)
+		{
 			if (x[i] > maior)
 			{
 				maior = x[i];
-				posicao = i;
+				posicaomaior = i;
 			}
-		}
-		System.out.println("maior = "+maior+" na posiÁ„o x["+i+"]");
-	}
+		}	
+		System.out.println("menor = "+menor+" na posi√ß√£o x["+posicaomenor+"]");	
+		System.out.println("maior = "+maior+" na posi√ß√£o x["+posicaomaior+"]");
 
+		
+		Arrays.sort(x);
+		for (i=0; i < x.length; i++)
+		{
+			System.out.println("x["+i+"]= " +x[i]);
+		}
+	}
 }
