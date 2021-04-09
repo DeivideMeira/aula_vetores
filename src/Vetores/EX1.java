@@ -17,17 +17,17 @@ public class EX1 {
 		int maior=0;
 		int menor= 0;
 		int i;
-		int posicaomenor=0;
-		int posicaomaior=0;
+		int posicaomenor = 0;
+		int posicaomaior = 0;
+
 		
 		int x[] = new int[5];
 		
 		for (i=0; i < x.length; i++)
 		{
 			x[i] = entrada.nextInt(); //alimenta o vetor
-			menor = x[i];
-			maior = x[i];
-
+			menor = x[0];
+			maior = x[0];
 		}
 		
 		for(i=0; i<x.length; i++)
