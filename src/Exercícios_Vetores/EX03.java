@@ -1,4 +1,4 @@
-package Exercícios_Vetores;
+package ExercÃ­cios_Vetores;
 
 import java.util.Scanner;
 
@@ -10,28 +10,27 @@ public class EX03 {
 	public static void main(String[] args) {
 
 		int [] N = new int [20]; 
-		int x = N.length;
-		int i;
+		int i, aux;
 
 		Scanner entrada = new Scanner (System.in);
 		
-		for (i = (x-1); i >= (x/2); i--)
+		for (i = 0; i < N.length; i++)
 		{
 			N[i] = entrada.nextInt(); 
 
 		}
 		
-		for (i = (x/2-1); i >= 0; i--)
+		for (i = 0; i < N.length/2; i++)
 		{
-			N[i] = entrada.nextInt(); 
+			aux = N[i];
+			N[i] = N[(N.length-1)-i];
+			N[(N.length-1)-i] = aux;
 
 		}
 		
-		
-		for (i=0; i <x; i++)
+		for (i=0; i < N.length; i++)
 		{
 			System.out.println("N["+i+"]= " + N[i]);
 		}
 	}
-
 }
