@@ -26,7 +26,7 @@ public class EX05 {
 		for (int i = 0; i <X.length; i++)
 		{
 			X[i] = entrada.nextInt();
-			menor = X[i];
+			menor = X[0];
 
 		}
 		
